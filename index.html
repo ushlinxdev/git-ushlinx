@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USHLINX | Soluciones Tecnológicas & Transformación Digital Corporativa</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="USHLINX es líder en desarrollo de software corporativo, arquitectura cloud, inteligencia artificial y ciberseguridad. Impulsamos la transformación digital de tu empresa.">
+  <meta name="keywords" content="USHLINX, desarrollo software, soluciones cloud, inteligencia artificial, ciberseguridad, transformacion digital, consultoria it, devops">
+  <meta name="author" content="USHLINX Corporate">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="USHLINX | Innovación y Tecnología Corporativa">
+  <meta property="og:description" content="Infraestructura Cloud, Software A Medida, Inteligencia Artificial y Ciberseguridad para empresas de alto rendimiento.">
+  <meta property="og:image" content="./assets/images/hero.jpg">
+  <meta property="og:url" content="https://ushlinx.github.io/">
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/jpeg" href="./assets/images/logo.jpg">
+  <link rel="apple-touch-icon" href="./assets/images/logo.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Schema.org JSON-LD for Corporate SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Corporation",
+    "name": "USHLINX",
+    "alternateName": "USHLINX Tech & Innovation",
+    "url": "https://ushlinx.github.io/",
+    "logo": "./assets/images/logo.jpg",
+    "description": "Proveedores globales de soluciones tecnológicas avanzadas, software a medida, inteligencia artificial y servicios cloud.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Global"
+    },
+    "sameAs": [
+      "https://github.com/ushlinx",
+      "https://linkedin.com/company/ushlinx",
+      "https://twitter.com/ushlinx"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Announcement / Top Bar -->
+  <div class="top-bar" id="top-bar">
+    <div class="container top-bar-content">
+      <span class="badge badge-pulse">Nuevo</span>
+      <p class="top-bar-text">Descubre nuestras soluciones de <strong>Inteligencia Artificial Generativa Corporativa</strong> para 2026.</p>
+      <a href="#calculator" class="top-bar-link">Cotizar Servicio &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#home" class="brand" aria-label="Página de Inicio USHLINX">
+        <img src="./assets/images/logo.jpg" alt="Logo USHLINX" class="brand-logo" width="40" height="40">
+        <span class="brand-name">USH<span>LINX</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Inicio</a></li>
+          <li><a href="#about" class="nav-link">Nosotros</a></li>
+          <li><a href="#services" class="nav-link">Servicios</a></li>
+          <li><a href="#calculator" class="nav-link">Cotizador</a></li>
+          <li><a href="#portfolio" class="nav-link">Casos de Éxito</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="btn-icon" aria-label="Cambiar modo oscuro a claro" title="Cambiar tema">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm btn-header">Hablar con un Experto</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menu-toggle" class="hamburger" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Overlay & Menu -->
+    <div id="mobile-overlay" class="mobile-overlay" aria-hidden="true"></div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Navegación Móvil">
+      <div class="mobile-nav-header">
+        <div class="brand">
+          <img src="./assets/images/logo.jpg" alt="Logo USHLINX" class="brand-logo" width="32" height="32">
+          <span class="brand-name">USH<span>LINX</span></span>
+        </div>
+        <button id="menu-close" class="btn-icon" aria-label="Cerrar menú">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Inicio</a></li>
+        <li><a href="#about" class="mobile-nav-link">Nosotros</a></li>
+        <li><a href="#services" class="mobile-nav-link">Servicios</a></li>
+        <li><a href="#calculator" class="mobile-nav-link">Cotizador Estimativo</a></li>
+        <li><a href="#portfolio" class="mobile-nav-link">Casos de Éxito</a></li>
+        <li><a href="#faq" class="mobile-nav-link">Preguntas Frecuentes</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contacto</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <a href="#contact" class="btn btn-primary btn-block">Iniciar Proyecto</a>
+        <p class="mobile-contact-info">contacto@ushlinx.com | +1 (800) 555-USHLINX</p>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-text-content">
+          <div class="tag-pill">
+            <span class="tag-dot"></span>
+            Transformación Digital Empresarial
+          </div>
+          <h1 class="hero-title">
+            Conectando el Futuro Digital de Tu <span class="text-gradient">Empresa Corporativa</span>
+          </h1>
+          <p class="hero-subtitle">
+            Diseñamos e implementamos ecosistemas de software a medida, arquitectura cloud de alta escala, ciberseguridad avanzada y soluciones de Inteligencia Artificial para corporaciones globales.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#calculator" class="btn btn-primary btn-lg">
+              Cotizar Mi Proyecto
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#services" class="btn btn-secondary btn-lg">
+              Explorar Servicios
+            </a>
+          </div>
+          <div class="hero-trust">
+            <p class="trust-title">Confían en nuestras soluciones:</p>
+            <div class="trust-badges">
+              <span class="trust-item">FINTECH GLOBAL</span>
+              <span class="trust-item">HEALTHCARE</span>
+              <span class="trust-item">LOGISTICS PRO</span>
+              <span class="trust-item">CLOUD RETAIL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-container">
+            <img src="./assets/images/hero.jpg" alt="Plataforma Cloud e Inteligencia Artificial USHLINX" class="hero-image" width="640" height="360" loading="eager">
+            <div class="glass-floating-card card-stat-1">
+              <div class="icon-circle bg-cyan">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <div>
+                <span class="stat-number">99.99%</span>
+                <span class="stat-label">SLA & Disponibilidad Cloud</span>
+              </div>
+            </div>
+            <div class="glass-floating-card card-stat-2">
+              <div class="icon-circle bg-purple">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <div>
+                <span class="stat-number">+180</span>
+                <span class="stat-label">Despliegues Exitosos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Key Metrics Banner -->
+      <div class="container metrics-wrapper">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <h3 class="metric-number" data-target="150" data-prefix="+">0</h3>
+            <p class="metric-label">Proyectos Corporativos</p>
+          </div>
+          <div class="metric-card">
+            <h3 class="metric-number" data-target="99" data-suffix="%">0</h3>
+            <p class="metric-label">Uptime Garantizado</p>
+          </div>
+          <div class="metric-card">
+            <h3 class="metric-number" data-target="45" data-prefix="+">0</h3>
+            <p class="metric-label">Integraciones de IA</p>
+          </div>
+          <div class="metric-card">
+            <h3 class="metric-number" data-target="24" data-suffix="/7">0</h3>
+            <p class="metric-label">Soporte & Monitoreo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Sobre USHLINX</span>
+          <h2 class="section-title">Ingeniería de Software de Clase Mundial para Grandes Empresas</h2>
+          <p class="section-description">
+            Nacimos con la visión de cerrar la brecha entre los desafíos operacionales corporativos y las tecnologías de vanguardia. Unimos experiencia, velocidad de desarrollo y excelencia en UX/UI.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-feature-card">
+            <div class="feature-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+            </div>
+            <h3>Arquitectura Cloud Resiliente</h3>
+            <p>Diseñamos infraestructuras distribuidas en AWS, Google Cloud y Azure enfocadas en alta disponibilidad, tolerancia a fallos y autogestionables.</p>
+          </div>
+
+          <div class="about-feature-card">
+            <div class="feature-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <h3>Seguridad & Compliance Zero-Trust</h3>
+            <p>Protección integral de datos con auditorías periódicas, encriptación end-to-end y cumplimiento de normativas ISO 27001, GDPR y SOC2.</p>
+          </div>
+
+          <div class="about-feature-card">
+            <div class="feature-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+            </div>
+            <h3>Agilidad & Entrega Continua</h3>
+            <p>Nuestra metodología CI/CD e ingeniería DevOps garantizan entregas continuas, iteraciones rápidas y despliegues sin interrupción de servicio.</p>
+          </div>
+        </div>
+
+        <!-- Vision Statement Banner -->
+        <div class="vision-banner">
+          <div class="vision-content">
+            <h3 class="vision-title">¿Listo para modernizar la arquitectura digital de tu organización?</h3>
+            <p class="vision-text">Agenda una sesión estratégica con nuestros consultores principales para diagnosticar tus sistemas actuales.</p>
+          </div>
+          <a href="#contact" class="btn btn-accent btn-md">Agendar Diagnóstico Gratuito</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Nuestros Servicios</span>
+          <h2 class="section-title">Soluciones End-to-End para Tu Empresa</h2>
+          <p class="section-description">Acompañamos todo el ciclo de vida de tu software: desde la concepción de la arquitectura hasta la operación en producción.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service Card 1 -->
+          <article class="service-card">
+            <div class="service-header">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <span class="service-badge">Core</span>
+            </div>
+            <h3 class="service-title">Desarrollo de Software Custom</h3>
+            <p class="service-text">Creación de aplicaciones web corporativas, plataformas SaaS escalables y sistemas a medida utilizando APIs RESTful, GraphQL y microservicios.</p>
+            <ul class="service-list">
+              <li>Web Apps Pro con PWA y SPA</li>
+              <li>Arquitectura de Microservicios</li>
+              <li>UX/UI centrado en conversión</li>
+            </ul>
+            <a href="#contact" class="service-link">Consultar por desarrollo &rarr;</a>
+          </article>
+
+          <!-- Service Card 2 -->
+          <article class="service-card">
+            <div class="service-header">
+              <div class="service-icon icon-cyan">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19.5 20 22M15.5 12.5 18 15M2 2l20 20M12 6a6 6 0 0 1 6 6c0 .87-.19 1.7-.52 2.44"></path><path d="M6 12A6 6 0 0 0 12 18c1.33 0 2.54-.43 3.52-1.16"></path></svg>
+              </div>
+              <span class="service-badge">Tendencia</span>
+            </div>
+            <h3 class="service-title">Cloud Native & DevOps</h3>
+            <p class="service-text">Migración e implementación de infraestructuras en la nube pública, privada o híbrida con automatización Terraform, Docker y Kubernetes.</p>
+            <ul class="service-list">
+              <li>AWS / Google Cloud / Azure</li>
+              <li>Pipelines CI/CD Automatizados</li>
+              <li>FinOps & Optimización de Costos</li>
+            </ul>
+            <a href="#contact" class="service-link">Consultar por Cloud &rarr;</a>
+          </article>
+
+          <!-- Service Card 3 -->
+          <article class="service-card">
+            <div class="service-header">
+              <div class="service-icon icon-purple">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+              </div>
+              <span class="service-badge">IA Empresarial</span>
+            </div>
+            <h3 class="service-title">IA & Machine Learning</h3>
+            <p class="service-text">Integración de modelos LLM, automatización de procesos mediante agentes inteligentes, análisis predictivo y visión computacional.</p>
+            <ul class="service-list">
+              <li>Integración de LLMs & RAG Corporativo</li>
+              <li>Modelos Predictivos de Negocio</li>
+              <li>Automatización de Operaciones</li>
+            </ul>
+            <a href="#contact" class="service-link">Consultar por IA &rarr;</a>
+          </article>
+
+          <!-- Service Card 4 -->
+          <article class="service-card">
+            <div class="service-header">
+              <div class="service-icon icon-emerald">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <span class="service-badge">Seguridad</span>
+            </div>
+            <h3 class="service-title">Ciberseguridad & SecOps</h3>
+            <p class="service-text">Pruebas de penetración, análisis de vulnerabilidades, implementación de arquitecturas Zero-Trust y monitoreo continuo de amenazas.</p>
+            <ul class="service-list">
+              <li>Auditoría Pentesting & Red Team</li>
+              <li>Encriptación & Gestión de Tokens</li>
+              <li>Cumplimiento Normativo Internacional</li>
+            </ul>
+            <a href="#contact" class="service-link">Consultar por Seguridad &rarr;</a>
+          </article>
+
+          <!-- Service Card 5 -->
+          <article class="service-card">
+            <div class="service-header">
+              <div class="service-icon icon-amber">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+              </div>
+              <span class="service-badge">Estrategia</span>
+            </div>
+            <h3 class="service-title">Consultoría & Modernización</h3>
+            <p class="service-text">Reingeniería de sistemas legacy, migración monolito a microservicios y asesoría estratégica de liderazgo tecnológico CTO-as-a-Service.</p>
+            <ul class="service-list">
+              <li>Diagnóstico Tecnológico Completo</li>
+              <li>Estrategia de Escalabilidad</li>
+              <li>CTO on Demand & Tech Advisory</li>
+            </ul>
+            <a href="#contact" class="service-link">Consultar por Asesoría &rarr;</a>
+          </article>
+
+          <!-- Service Card 6 -->
+          <article class="service-card">
+            <div class="service-header">
+              <div class="service-icon icon-rose">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <span class="service-badge">Soporte</span>
+            </div>
+            <h3 class="service-title">Soporte 24/7 & Managed Services</h3>
+            <p class="service-text">Monitoreo activo de infraestructura, respuesta inmediata ante incidentes y mantenimiento preventivo continuo con soporte multicanal.</p>
+            <ul class="service-list">
+              <li>SLA de Respuesta < 15 Minutos</li>
+              <li>Dashboards de Telemetría en Tiempo Real</li>
+              <li>Parches & Mantenimiento Proactivo</li>
+            </ul>
+            <a href="#contact" class="service-link">Consultar por Soporte &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE PROJECT CALCULATOR SECTION -->
+    <section id="calculator" class="section calculator-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Herramienta Interactiva</span>
+          <h2 class="section-title">Calculador Estimativo de Proyecto</h2>
+          <p class="section-description">Selecciona las necesidades de tu empresa para obtener una estimación presupuestaria instantánea y un desglose sugerido.</p>
+        </div>
+
+        <div class="calculator-card glass-panel">
+          <form id="quote-calculator-form" onsubmit="return false;">
+            <div class="calculator-step">
+              <label class="calc-label">1. Tipo de Solución Principal:</label>
+              <div class="calc-options-grid">
+                <label class="calc-option">
+                  <input type="radio" name="projectType" value="web" data-price="2500" checked>
+                  <span class="calc-box">
+                    <span class="calc-box-title">Web App Corporativa</span>
+                    <span class="calc-box-desc">Plataforma responsive full-stack</span>
+                  </span>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="projectType" value="cloud" data-price="3500">
+                  <span class="calc-box">
+                    <span class="calc-box-title">Infraestructura Cloud</span>
+                    <span class="calc-box-desc">Migración & DevOps AWS/GCP</span>
+                  </span>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="projectType" value="ai" data-price="4500">
+                  <span class="calc-box">
+                    <span class="calc-box-title">Inteligencia Artificial</span>
+                    <span class="calc-box-desc">Integración LLM / Agentes RAG</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="calculator-step">
+              <label class="calc-label">2. Escala & Alcance del Negocio:</label>
+              <select id="projectScale" class="form-select">
+                <option value="1" data-multiplier="1">Start-up / PyME (Hasta 5,000 usuarios activos)</option>
+                <option value="1.5" data-multiplier="1.5" selected>Empresa Mediana (5,000 - 50,000 usuarios activos)</option>
+                <option value="2.2" data-multiplier="2.2">Gran Corporación (Multi-región / Alta Escala)</option>
+              </select>
+            </div>
+
+            <div class="calculator-step">
+              <label class="calc-label">3. Módulos Adicionales (Opcional):</label>
+              <div class="calc-checkbox-grid">
+                <label class="calc-checkbox-item">
+                  <input type="checkbox" name="addons" value="security" data-price="1200">
+                  <span>Auditoría de Ciberseguridad & Pentesting (+ \$1,200)</span>
+                </label>
+                <label class="calc-checkbox-item">
+                  <input type="checkbox" name="addons" value="support" data-price="800">
+                  <span>Soporte 24/7 SLA Garantizado (+ \$800/mes)</span>
+                </label>
+                <label class="calc-checkbox-item">
+                  <input type="checkbox" name="addons" value="seo" data-price="600">
+                  <span>Optimización UX/UI & Performance SEO (+ \$600)</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Calculation Output Display -->
+            <div class="calculator-result-box">
+              <div class="result-details">
+                <span class="result-label">Inversión Estimada:</span>
+                <div class="result-price-wrapper">
+                  <span class="currency-symbol">USD \$</span>
+                  <span id="calculated-price" class="result-price">3,700</span>
+                  <span class="price-note">*Estimación aproximada</span>
+                </div>
+              </div>
+              <button type="button" id="btn-request-quote" class="btn btn-primary btn-md">
+                Solicitar Propuesta Oficial Con Este Estimado
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO / CASOS DE ÉXITO SECTION -->
+    <section id="portfolio" class="section portfolio-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Casos de Éxito</span>
+          <h2 class="section-title">Resultados Demostrables para Líderes de la Industria</h2>
+          <p class="section-description">Conoce algunos de los proyectos tecnológicos donde transformamos la eficiencia y los ingresos de nuestros clientes.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Case Study 1 -->
+          <div class="portfolio-card">
+            <div class="portfolio-tag">Fintech</div>
+            <h3 class="portfolio-title">Plataforma Pagos Híbrida LatAm</h3>
+            <p class="portfolio-desc">Modernización de sistema transaccional procesando más de 5 millones de operaciones diarias con latencia menor a 40ms.</p>
+            <div class="portfolio-stats">
+              <div class="p-stat">
+                <strong>+340%</strong>
+                <span>Rendimiento</span>
+              </div>
+              <div class="p-stat">
+                <strong>99.999%</strong>
+                <span>Uptime</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 2 -->
+          <div class="portfolio-card">
+            <div class="portfolio-tag">Logística</div>
+            <h3 class="portfolio-title">Optimizador de Rutas con IA</h3>
+            <p class="portfolio-desc">Algoritmo predictivo de asignación de flota que redujo el consumo de combustible y tiempos de distribución internacional.</p>
+            <div class="portfolio-stats">
+              <div class="p-stat">
+                <strong>-35%</strong>
+                <span>Costos Combustible</span>
+              </div>
+              <div class="p-stat">
+                <strong>2.5x</strong>
+                <span>Entregas/Día</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 3 -->
+          <div class="portfolio-card">
+            <div class="portfolio-tag">Salud / Cloud</div>
+            <h3 class="portfolio-title">Portal de Telemedicina Encriptado</h3>
+            <p class="portfolio-desc">Ecosistema cloud seguro bajo normativa HIPAA para atención en tiempo real y resguardo de datos médicos encriptados.</p>
+            <div class="portfolio-stats">
+              <div class="p-stat">
+                <strong>100%</strong>
+                <span>Cumplimiento HIPAA</span>
+              </div>
+              <div class="p-stat">
+                <strong>+1M</strong>
+                <span>Pacientes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Testimonios</span>
+          <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+        </div>
+
+        <div class="testimonial-cards-wrapper">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">"USHLINX transformó completamente nuestra arquitectura en la nube. Lo que antes tardaba horas en procesar, ahora toma segundos. Su compromiso técnico es inigualable."</p>
+            <div class="testimonial-author">
+              <div class="avatar-circle">CR</div>
+              <div>
+                <strong>Carlos Rodríguez</strong>
+                <span>CTO, Finova LatAm</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">"El equipo de USHLINX desarrolló nuestra plataforma web y móvil desde cero. El nivel de detalle en la UX y la velocidad de entrega superó todas nuestras expectativas."</p>
+            <div class="testimonial-author">
+              <div class="avatar-circle">MA</div>
+              <div>
+                <strong>Mariana Albarracín</strong>
+                <span>VP de Producto, TechFlow Global</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="section faq-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">FAQ</span>
+          <h2 class="section-title">Preguntas Frecuentes</h2>
+          <p class="section-description">Respuestas a las dudas más habituales sobre nuestra metodología y contratación.</p>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>¿Cómo inician los proyectos con USHLINX?</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Comenzamos con una sesión de descubrimiento para analizar los objetivos de tu empresa, evaluamos tu infraestructura actual y presentamos una propuesta con alcances, plazos y costos garantizados.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>¿Qué metodología de trabajo utilizan?</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Trabajamos con metodologías Ágiles (Scrum / Kanban) con entregas iterativas cada 2 semanas (Sprints), dashboards transparentes en Jira/GitHub y comunicación constante por Slack o MS Teams.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>¿Quién conserva la propiedad intelectual del código?</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>100% de la propiedad intelectual, código fuente, documentación y repositorios pertenecen exclusivamente al cliente desde el primer día bajo contratos de confidencialidad NDA estricto.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>¿Ofrecen garantías y soporte posterior al lanzamiento?</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Sí, incluimos un período de garantía post-despliegue de 90 días sin costo adicional y planes opcionales de soporte preventivo y correctivo con SLA garantizado 24/7/365.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info-panel">
+            <span class="section-subtitle">Contacto Corporativo</span>
+            <h2 class="section-title">Hablemos de Tu Próximo Gran Proyecto</h2>
+            <p class="contact-intro">Déjanos tus datos y un especialista técnico senior se pondrá en contacto contigo en menos de 2 horas laborables.</p>
+
+            <div class="contact-methods">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <strong>Correo Electrónico:</strong>
+                  <p><a href="mailto:contacto@ushlinx.com">contacto@ushlinx.com</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <strong>Teléfono Directo:</strong>
+                  <p><a href="tel:+18005558745">+1 (800) 555-USHLINX</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <strong>Oficinas Corporativas:</strong>
+                  <p>Corporate Innovation Hub | Ushuaia & Global Operations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-form-card glass-panel">
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Nombre Completo *</label>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="Ej: María Giménez" required>
+                  <span class="error-msg" id="err-name">Por favor ingresa tu nombre</span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email Corporativo *</label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="maria@empresa.com" required>
+                  <span class="error-msg" id="err-email">Ingresa un correo electrónico válido</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-phone" class="form-label">Teléfono / WhatsApp</label>
+                  <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder="+54 9 11 1234-5678">
+                </div>
+                <div class="form-group">
+                  <label for="contact-service" class="form-label">Servicio Requerido</label>
+                  <select id="contact-service" name="service" class="form-select">
+                    <option value="desarrollo">Desarrollo Software Custom</option>
+                    <option value="cloud">Cloud & DevOps</option>
+                    <option value="ia">Inteligencia Artificial</option>
+                    <option value="ciberseguridad">Ciberseguridad & Pentesting</option>
+                    <option value="otro">Otro / Asesoría General</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Detalles del Proyecto *</label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Describe brevemente tus requerimientos u objetivos..." required></textarea>
+                <span class="error-msg" id="err-message">Escribe un mensaje de al menos 10 caracteres</span>
+              </div>
+
+              <button type="submit" id="btn-submit-contact" class="btn btn-primary btn-block btn-lg">
+                Enviar Mensaje
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand">
+          <img src="./assets/images/logo.jpg" alt="Logo USHLINX" class="brand-logo" width="36" height="36">
+          <span class="brand-name">USH<span>LINX</span></span>
+        </a>
+        <p class="footer-desc">
+          Empresa líder en desarrollo de soluciones tecnológicas, infraestructura cloud resiliente e inteligencia artificial corporativa.
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/ushlinx" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub USHLINX">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn USHLINX">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter USHLINX">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-title">Navegación</h4>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#services">Servicios Corporativos</a></li>
+          <li><a href="#calculator">Cotizador de Proyectos</a></li>
+          <li><a href="#portfolio">Casos de Éxito</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-title">Servicios Clave</h4>
+        <ul>
+          <li><a href="#services">Desarrollo Web & Cloud</a></li>
+          <li><a href="#services">Inteligencia Artificial</a></li>
+          <li><a href="#services">Ciberseguridad Zero-Trust</a></li>
+          <li><a href="#services">Soporte 24/7 Managed</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4 class="footer-title">Boletín Tecnológico</h4>
+        <p>Recibe reportes mensuales sobre tendencias de software corporativo e IA.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" id="newsletter-email" placeholder="tu-email@empresa.com" class="form-input" required>
+          <button type="submit" class="btn btn-primary">Suscribir</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 USHLINX Innovation & Corporate Tech. Todos los derechos reservados.</p>
+        <div class="footer-legal">
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos del Servicio</a>
+          <a href="#">SLA & Soporte</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Floating Button -->
+  <button id="scroll-top" class="btn-scroll-top" aria-label="Volver arriba">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- JavaScript File -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
